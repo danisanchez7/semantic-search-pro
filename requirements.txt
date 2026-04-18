@@ -21,3 +21,8 @@ pypdf==4.1.0                 # Para extraer el texto de los PDFs que suba el usu
 # Pruebas Unitarias (Testing)
 pytest==8.1.1                # Framework estándar de pruebas en Python
 httpx==0.27.0                # Cliente HTTP necesario para probar los endpoints de FastAPI
+
+
+# Frontend (Interfaz de Usuario)
+streamlit==1.32.0            # Framework para la interfaz gráfica
+requests==2.31.0             # Para hacer peticiones HTTP a la API
