@@ -38,7 +38,7 @@ La implementación mediante contenedores es el método recomendado para asegurar
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/tu-usuario/semantic-search-pro.git](https://github.com/tu-usuario/semantic-search-pro.git)
+   git clone [https://github.com/danisanchez7/semantic-search-pro.git](https://github.com/danisanchez7/semantic-search-pro.git)
    cd semantic-search-pro
    ```
 
