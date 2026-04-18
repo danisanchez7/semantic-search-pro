@@ -11,3 +11,16 @@ services:
     environment:
       - CHROMA_DB_PATH=/app/chroma_data
     restart: always
+
+  frontend:
+    build: .
+    container_name: semantic_frontend
+    # Reemplazamos el comando por defecto de FastAPI por el de Streamlit
+    command: ["streamlit", "run", "src/frontend/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    depends_on:
+      - api
+    restart: always
