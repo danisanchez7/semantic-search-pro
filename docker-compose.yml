@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: semantic_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - CHROMA_DB_PATH=/app/chroma_data
+    restart: always
