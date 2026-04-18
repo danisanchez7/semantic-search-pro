@@ -1,0 +1,23 @@
+# API y Servidor
+fastapi==0.110.0
+uvicorn==0.27.1
+python-multipart==0.0.9      # Necesario para que FastAPI acepte subida de archivos (PDFs)
+pydantic-settings==2.2.1     # Para manejar las variables de entorno del .env de forma segura
+
+# Inteligencia Artificial y Embeddings
+langchain==0.1.12
+langchain-community==0.0.28
+sentence-transformers==2.5.1 # Modelo Open Source de HuggingFace para generar los vectores
+
+
+# Base de Datos Vectorial
+chromadb==0.4.24             # Vector Store eficiente y local
+
+
+# Procesamiento de Documentos
+pypdf==4.1.0                 # Para extraer el texto de los PDFs que suba el usuario
+
+
+# Pruebas Unitarias (Testing)
+pytest==8.1.1                # Framework estándar de pruebas en Python
+httpx==0.27.0                # Cliente HTTP necesario para probar los endpoints de FastAPI
